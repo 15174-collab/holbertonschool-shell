@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Affiche To infinity and beyond en boucle en ajoutant entre chaque iteratio un sleep 2
+for ((;;))
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
