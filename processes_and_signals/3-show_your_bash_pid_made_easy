@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# recherchet affiche le processus par nom et retourne leur PIDnsans lncer ps et grep
+pgrep -l "bash"
