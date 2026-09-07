@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Ce script affiche les lignes contenant le mot bash et permettant d'afficher son propre PIDson propre PID 
+# shellcheck disable=SC2009
+ps aux | grep "bash"
