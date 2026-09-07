@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# deuxieme procede de tuer un processu avec kill
+pkill 4-to_infinity_and_beyond
