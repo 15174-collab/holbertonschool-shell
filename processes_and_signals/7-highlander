@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Affiche une boucle indefinie avec sleep 2 et phras entre cahque iteration apres reception du signal SIGTERM
+trap 'echo "I am invincible!!!"' SIGTERM
+for ((;;))
+do
+	echo "To infinity and beyond"
+	echo "To infinity and beyond" 
+	echo "Je suis invincible!!!"	
+	sleep 2
+done
