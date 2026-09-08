@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Ce scrit tue toutt processus dont la commande contient "script.sh"
+pkill -9 -f "4-to_infinity_and_beyond"
