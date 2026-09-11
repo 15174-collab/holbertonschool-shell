@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Affiche 10 fois "Best School"
+# valeur de i entre 0 et 10
+#for ((<Etat initial> ; <Condition répétition> ; <Incrémenter à chaque itération>))
+#do
+  # Commandes à exécuter pour chaque élément
+#done
+for (( i=0; i<10; i++ ))
+do
+    echo "Best School"
+done
