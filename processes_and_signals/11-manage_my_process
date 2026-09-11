@@ -1,0 +1,21 @@
+#!/bin/env bash
+# Manage le script manage my process with start,stop and restart
+case "$1" in
+    start )
+        ./manage_my_process &
+        echo "$$" > /var/run/my_process.pid
+        echo "manage_my_process started"
+        ;;
+    stop )
+        pkill -9 -f /var/run/my_process.pid
+        rm /var/run/my_process.pid/var/run/my_process.pid 
+        echo "manage_my_process stopped"
+        ;;
+    restart )
+         echo "manage_my_process restarted"
+        ;; 
+    * )
+        echo "Usage: manage_my_process {start|stop|restart}"
+        exit
+        ;;
+esac

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Boucle indefnie "I am alive!" avec un slepp 2 vers /tmp/my_process
+for ((;;))
+do  
+    echo "I am alive!"
+    sleep 2
+done
