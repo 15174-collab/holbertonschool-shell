@@ -5,4 +5,4 @@ until [ $count -gt 9 ]; do
     printf "Best School " 
     count=$((count + 1))  
 done
-echo
+echo 
