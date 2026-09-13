@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Boucle avec until exclusivement
+count=0
+until [ $count -gt 9 ]; do
+    printf "Best School " 
+    count=$((count + 1))  
+done
+echo
