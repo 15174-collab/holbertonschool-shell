@@ -2,6 +2,6 @@
 # Boucle avec until exclusivement
 count=0
 until [ $count -gt 9 ]; do
-    printf "Best School " 
+    echo "Best School " 
     count=$((count + 1))  
 done
