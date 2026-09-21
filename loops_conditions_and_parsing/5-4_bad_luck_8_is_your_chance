@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Loop while de 1 à 10 with if ,elif, else et afficher un texte diffferent au 4 eme tour et 8 eme tour
+count=1
+number4="bad luck"
+number8="good luck"
+
+while (( count <= 10 )); do
+     if (( count == 4 )); then
+         echo "$number4"
+     elif (( count == 8 )); then
+         echo "$number8"
+     else     
+         echo "Best School"
+     fi
+     ((count++))
+done     
