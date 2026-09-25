@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Affiche l'heure par 12 heures et 59 minutes avec while (boucle) afficher de 0à12 et afficher les minutes de 1 à 59
+heure=0
+while (( heure <= 12 )); do
+     echo "Hour: $heure"
+     minute=1 
+     while (( minute <=59 )); do 
+         echo "$minute"
+        ((minute++))
+     done    
+     ((heure++))
+done
