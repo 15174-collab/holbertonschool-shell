@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Afficher le contenu d'un dossier courant sous forme d liste seule la partie du nom situéee apres le tiret s'afficher
+for fichier in *; do
+    echo "${fichier#*-}"
+done
