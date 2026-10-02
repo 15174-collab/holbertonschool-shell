@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Écrivez un script Bash qui affiche le contenu du fichier /etc/passwd, en utilisant une boucle « while » et IFS.
+while IFS=':' read -r username password uid gid gecos home shell; do
+     echo "The user $username is part of the $gid gang, lives in $home and rides $shell. $uid's place is protected by the passcode $passwd, more info about the user here: $gecos"
+done < /etc/passwd
