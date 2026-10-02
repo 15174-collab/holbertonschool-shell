@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Le nom d'utilisateur, l'identifiant de l'u  affiche le contenu du fichier /etc/passwd.Votre script ne doit afficher que :le nom d'utilisateurl'identifiant de l'utilisateur le chemin d'accès au répertoire personnel de l'utilisateur la boucle « while »
+#while
+while IFS=':' read -r user _ uid _ _ home _; do
+     echo "$user:$uid:$home"
+done < /etc/passwd
