@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Affiche les nombres de 1 à 100 avec la regle modulo %
+count=1
+while (( count <= 100 )); do
+    if (( count % 15 == 0 )); then
+        echo "FizzBuzz"
+    elif ((  count % 3 == 0 )); then
+        echo "Fizz"
+    elif (( count % 5 == 0)); then
+        echo "Buzz"
+    else  
+        echo "$count"
+    fi
+    (( count++ ))
+done
