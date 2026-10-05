@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Affiche, avec awk l'adresse IP des visiteurs avec le code HTTP provenant du journal des los Apache
+awk '{print $1, $9}' apache-access.log
